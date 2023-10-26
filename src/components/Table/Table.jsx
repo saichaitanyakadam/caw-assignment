@@ -3,7 +3,7 @@ import {BsCheck2} from "react-icons/bs"
 import {RxCross1} from "react-icons/rx"
 import { TableData } from "../../constants/AppConstants"
 import Modal from "../Modal/Modal"
-import EditModal from "../EditModal/EditModal"
+
 
 const TableContainer = () => {
     const [tableData,setTableData]=useState(TableData)
@@ -90,7 +90,6 @@ const TableContainer = () => {
       </tbody>
     </table>
     {showModal && <Modal handleClose={setShowModal} handleModal={handleMissing} /> } 
-    <EditModal />
     </>
   )
 }
